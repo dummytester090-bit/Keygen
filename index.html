@@ -49,7 +49,7 @@
                     list.innerHTML = keys.map(k =>
                         `<div class="key-item"><code>${k}</code> <button class="btn-copy" onclick="copyOne('${k}')">Copy</button></div>`
                     ).join('');
-                    if (d.running) setTimeout(updateUI, 2000); // poll every 2s
+                    if (d.running) setTimeout(updateUI, 2000);
                 });
         }
 
@@ -62,7 +62,7 @@
                 body: JSON.stringify({password: pw})
             }).then(() => {
                 document.getElementById('status').textContent = 'Creating first account...';
-                updateUI(); // start polling
+                updateUI();
             });
         }
 
@@ -82,7 +82,6 @@
             alert('All keys copied!');
         }
 
-        // load initial state
         updateUI();
     </script>
 </body>
