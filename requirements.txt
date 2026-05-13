@@ -2,7 +2,7 @@ flask
 flask-cors
 playwright
 playwright-stealth
-smailpro-python-client
+mailtm
 SpeechRecognition
 pydub
 beautifulsoup4
